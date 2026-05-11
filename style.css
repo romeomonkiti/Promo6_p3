@@ -84,6 +84,12 @@ body{
     color: #000000;
 }
 
+.menu_toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
 .active{
     font-weight: 700;
 }
