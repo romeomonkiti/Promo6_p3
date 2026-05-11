@@ -67,22 +67,19 @@ body{
     align-items: center;
 }
 
-.barNavigation ul{
+.barNavigation{
     display: flex;
     gap: 40px;
     list-style: none;
     font-family: 'Poppins-regular', sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 0%;
 }
 
 .barNavigation a:hover {
     color: #fff;
 }
 
-.barNavigation ul li a{
+.barNavigation a{
     text-decoration: none;
     color: #000000;
 }
@@ -579,4 +576,132 @@ h1{
 
 .footer_content_part2_right{
     margin-right: 28px;
+}
+
+
+
+@media (max-width: 768px) {
+
+.header_content {
+    flex-direction: row;
+    padding: 20px;
+}
+
+.enteteP2 {
+    gap: 15px;
+}
+
+.barNavigation {
+    display: none;
+    border-radius: 10px;
+    /* flex-direction: column; */
+    gap: 15px;
+    background: #ebcdcd;
+    position: absolute;
+    top: 60px;
+    right: 70px;
+    z-index: 100;
+    padding: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.barNavigation.open {
+    display: flex;
+}
+
+.menu_toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.searchBar {
+    display: none; 
+}
+
+.hero_content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+.hero_content_text p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.pets_ages {
+    gap: 30px;
+}
+
+.Image_content {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image img {
+    width: 100px;
+}
+
+.Pet-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.Pet-left-part p {
+    width: 100%;
+}
+
+.Pet-product-img {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog_description_content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.Get_Pawsome_News {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+.img_dog {
+    width: 200px;
+    height: auto;
+}
+
+.email {
+    width: 100%;
+}
+
+.footer_content_part1 {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer_content_part1_1,
+.footer_content_part1_2 {
+    margin-right: 0;
+}
+
+.footer_content_part1_3_1 {
+    width: 100%;
+    height: auto;
+}
+
+.footer_content_part2 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
 }
